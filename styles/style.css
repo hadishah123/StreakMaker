@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    text-align: center;
+    background-color: wheat;
+}
+header{
+    background-image: url("https://img.freepik.com/free-vector/abstract-banner-design-shades-red_1048-12133.jpg?size=626&ext=jpg&ga=GA1.1.273578692.1725168859&semt=ais_hybrid");
+    color: white;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    width: 100%;
+}
+#button{
+    background-color: rgb(6, 157, 199);
+    padding: 10px;
+    border-radius: 9px;
+    color: white;
+    transition: 0.3s ease-in;
+}
+#button:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+header p{
+    color: white;
+}
+span{
+    color: rgb(0, 247, 210);
+
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section{
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px;
+    background-color: white;
+    transition: 0.3s ease;
+    box-shadow: 0.3 ease;
+    display: grid;
+    place-items: center;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+section img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    width: 110%;
+}
