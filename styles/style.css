@@ -83,5 +83,5 @@ footer{
     left: 0;
 }
 #jid:hover::after{
-    width: 0;
+    width: 30%;
 }
