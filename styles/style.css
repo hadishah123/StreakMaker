@@ -9,6 +9,10 @@ header{
     background-image: url("https://img.freepik.com/free-vector/abstract-banner-design-shades-red_1048-12133.jpg?size=626&ext=jpg&ga=GA1.1.273578692.1725168859&semt=ais_hybrid");
     color: white;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-size: cover;
     padding: 20px;
     width: 100%;
