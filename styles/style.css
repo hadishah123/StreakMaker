@@ -18,15 +18,16 @@ header{
     object-fit: cover;
 }
 #button{
-    background-color: rgb(6, 157, 199);
-    padding: 10px;
+    background:linear-gradient(70deg,rgb(234, 77, 77),rgb(76, 76, 236)) ;
+    padding: 10px 25px;
+    border: none;
     border-radius: 9px;
     color: white;
     transition: 0.3s ease-in;
 }
 #button:hover{
-    background-color: aqua;
-    color: black;
+    background-color: rgb(208, 52, 91);
+    color: white;
     transform: scale(1.05);
     transition: 0.3s ease-in;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
