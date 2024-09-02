@@ -15,7 +15,7 @@ header{
     flex-direction: column;
     background-size: cover;
     padding: 20px;
-    width: 100%;
+    object-fit: cover;
 }
 #button{
     background-color: rgb(6, 157, 199);
@@ -66,9 +66,9 @@ footer{
     color: white;
     background-color: black;
     padding: 20px;
-    margin: 0;
     position: relative;
-    width: 110%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #jid{
