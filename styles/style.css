@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: cursive;
     text-align: center;
-    background-color: wheat;
+    background-color: rgb(237, 232, 222);
 }
 header{
     background-image: url("https://img.freepik.com/free-vector/abstract-banner-design-shades-red_1048-12133.jpg?size=626&ext=jpg&ga=GA1.1.273578692.1725168859&semt=ais_hybrid");
@@ -16,13 +16,24 @@ header{
     background-size: cover;
     padding: 20px;
     object-fit: cover;
+    animation: come 2s ease-in-out;
+    /* animation-delay: 1s; */
+    transition: 3s ease-in-out;
+}
+@keyframes come {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 #button{
-    background:linear-gradient(70deg,rgb(234, 77, 77),rgb(76, 76, 236)) ;
+    background:linear-gradient(70deg,rgb(227, 114, 114),rgb(91, 91, 234)) ;
     padding: 10px 25px;
     border: none;
     border-radius: 9px;
-    color: white;
+    color: rgb(139, 13, 13);
     transition: 0.3s ease-in;
 }
 #button:hover{
@@ -36,7 +47,7 @@ header p{
     color: white;
 }
 span{
-    color: rgb(0, 247, 210);
+    color: rgb(252, 255, 71);
 
 }
 main{
@@ -49,26 +60,54 @@ section{
     border-radius: 7px;
     margin: 20px;
     background-color: white;
-    transition: 0.3s ease;
     box-shadow: 0.3 ease;
     display: grid;
     place-items: center;
     &:hover{
         transform: scale(1.05);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: rgb(128, 122, 122);
+        color: white;
+    }
+    animation: opacity 2s ease-in-out;
+    transition: 1s ease;
+}
+@keyframes opacity {
+    0%{
+        /* transform: scale(2); */
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    25%{
+        transform: translateX(-1000px);
+        opacity: 0;
+        /* transform: scale(2); */
+    }
+    100%{
+        opacity: 1;
+        /* transform: scale(1); */
     }
 }
 section img{
     width: 400px;
     height: 300px;
     object-fit: cover;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+    &:hover{
+        transform: scale(1.05);
+        position: relative;
+        transition: 0.3s ease-in-out;
+    }
 }
 footer{
     color: white;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
     position: relative;
     width: 100%;
+    bottom: 0;
+    font-size: 20px;
     box-sizing: border-box;
 }
 
