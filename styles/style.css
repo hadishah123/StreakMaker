@@ -22,7 +22,7 @@ header{
     object-fit: cover;
     animation: come 2s ease-in-out;
     /* animation-delay: 1s; */
-    transition: 3s ease-in-out;
+    transition: 2s ease;
 }
 @keyframes come {
     0%{
