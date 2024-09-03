@@ -1,0 +1,79 @@
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    flex-direction: column;
+}
+.outer{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    border:20px solid rgb(255, 255, 255);
+    border-top: 20px solid rgb(152, 238, 130);
+    border-radius: 50%;
+    animation: spinner 500ms linear infinite;
+}
+.outer:hover{
+    animation: spinner 10ms linear infinite;
+}
+.inner{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    border:20px solid rgb(255, 255, 255);
+    border-top: 20px solid rgb(130, 236, 238);
+    border-radius: 50%;
+    animation: spinner 500ms linear infinite;
+}
+/* .inner:hover{
+    animation: spinner 10ms linear infinite;
+} */
+.innerinn{
+    
+    /* background-color: white; */
+    border:20px solid rgb(255, 255, 255);
+    border-top: 20px solid rgb(229, 130, 238);
+    border-radius: 50%;
+    animation: spinner 500ms linear infinite;
+}
+/* .innerinn:hover{
+    animation: spinner 10ms linear infinite;
+} */
+
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loadin{
+    position: relative;
+    width: max-content;
+    transition: 2s ease;
+    animation: ttloader 2s linear;
+}
+.loadin::after{
+    content:'';
+    position: absolute;
+    background: linear-gradient(to right,rgb(34, 202, 217),rgb(22, 93, 4));
+    width: 100%;
+    height: 3px;
+    border-radius: 100px;
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+}
+.loadin:hover::after{
+    width: 0px;
+}
